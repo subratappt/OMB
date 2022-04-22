@@ -9,4 +9,6 @@ rsync -a ${HOME}/.oh-my-bash/custom/.omb/plugins/* ${HOME}/.oh-my-bash/custom/pl
 rsync -a ${HOME}/.oh-my-bash/custom/.omb/aliases/* ${HOME}/.oh-my-bash/custom/aliases/
 rsync -a ${HOME}/.oh-my-bash/custom/.omb/completions/* ${HOME}/.oh-my-bash/custom/completions/
 
+cp -f ${HOME}/.oh-my-bash/custom/.omb/inputrc ${HOME}/.inputrc
+
 source ${HOME}/.bashrc

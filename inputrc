@@ -1,0 +1,10 @@
+# display all possible matches for an ambiguous pattern at first tab
+set show-all-if-ambiguous on
+set show-all-if-unmodified on
+set menu-complete-display-prefix on
+
+# next tab(s) will cycle through matches
+TAB: menu-complete
+# shift tab cycles backward
+"\e[Z": menu-complete-backward
+Control-j: menu-complete

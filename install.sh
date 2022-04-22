@@ -1,6 +1,7 @@
 #!/bin/sh
 
-bash -c "$(wget https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh -O -)"
+git clone https://github.com/ohmybash/oh-my-bash.git ${HOME}/.oh-my-bash
 git clone https://github.com/subratappt/OMB.git ${HOME}/.omb
-cp ${HOME}/.bashrc ${HOME}/.bashrc_OMB_ORIGNAL
+mv ${HOME}/.bashrc ${HOME}/.bashrc_backup
 cp ${HOME}/.omb/bashrc.template.sh ${HOME}/.bashrc
+source ${HOME}/.bashrc
